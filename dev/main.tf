@@ -24,3 +24,17 @@ module "nat" {
   elasticIP = var.eip
   subnet_id = module.publicSubnet.publicsubnetID
 }
+
+module "publicRouteTable" {
+  source                  = "../modules/publicRouteTable"
+  vpc_id                  = module.vpc.vpcID
+  destination_cidr        = var.destination_cidr
+  internetgateway         = module.igw.igwID
+  public_route_table_name = var.public_route_table_name
+}
+
+module "publicRouteTableAssociation" {
+  source = "../modules/routeTableAssociation"
+  public_route_table = module.publicRouteTable.publicrouteID
+  subnet_id          = module.publicSubnet.publicsubnetID
+}
