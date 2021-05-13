@@ -9,7 +9,7 @@
 ***main.tf***
 ```hcl
 module "alb_and_alb_listeners" {
-  source                                 = "https://gitlab.com/ot-client/docasap/tf-modules/alb.git"
+  source                                 = "https://github.com/naveenverma005/Terraform"
   alb_name                               = var.alb_name
   internal_alb                           = var.internal
   alb_security_groups_ids                = var.alb_security_groups_ids
