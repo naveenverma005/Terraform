@@ -1,2 +1,0 @@
-# Terraform
-Repository for IaaC
