@@ -1,4 +1,4 @@
-@Library("Shared-Library") _
+@Library("Shared-Library@main") _
 node 
 {
   terraformWorkflow.call(
