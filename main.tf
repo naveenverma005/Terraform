@@ -1,5 +1,5 @@
 module "security_group" {
-  source      = "/security_group"
+  source      = "./security_group"
   sg_name     = var.sg_name
   vpc_id      = var.vpc_id
   sg_name_tag = var.sg_name_tag 
