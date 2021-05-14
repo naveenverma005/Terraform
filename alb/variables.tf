@@ -63,10 +63,10 @@ variable "prefix" {
 }
 
 #Variables for alb_listener
-variable "target_group_arn" {
-  description = "Provide Target Group arn"
-  type        = string
-}
+#variable "target_group_arn" {
+#  description = "Provide Target Group arn"
+#  type        = string
+#}
 
 variable "certificate_arn" {
   description = "Provide SSL certificate arn"
