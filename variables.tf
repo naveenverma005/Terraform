@@ -8,7 +8,7 @@ variable "sg_name" {
 variable "vpc_id" {
   description = "Give your vpc id here"
   type        = string
-  default     = "vpc-0cef057e0494947e"
+  default     = "vpc-0cef057e0494947e4"
 }
 
 variable "sg_name_tag" {
