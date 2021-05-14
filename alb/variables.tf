@@ -68,13 +68,13 @@ variable "prefix" {
 #  type        = string
 #}
 
-variable "certificate_arn" {
-  description = "Provide SSL certificate arn"
-  type        = string
-  default     = null
-}
+#variable "certificate_arn" {
+#  description = "Provide SSL certificate arn"
+#  type        = string
+#  default     = null
+#}
 
-variable "listener_details" {
-  description = "List of some Listener details here"
-  type        = map(any)
-}
+#variable "listener_details" {
+#  description = "List of some Listener details here"
+#  type        = map(any)
+#}
