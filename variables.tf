@@ -79,15 +79,3 @@ variable "prefix" {
   type        = string
   default     = "alb-logs"
 }
-
-#Variables for ALB Listeners
-variable "listener_details" {
-  description = "List of some Listener details here"
-  type        = map(any)
-  default     = {
-    forward_protocol = "HTTP"
-    ssl_policy       = ""
-    certificate_arn  = ""
-  }
-}
-
