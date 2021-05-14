@@ -21,7 +21,7 @@ variable "sg_name_tag" {
 variable "alb_name" {
   description = "Name for Load Balancer"
   type        = string
-  default     = "da-alb"
+  default     = "cfast-alb"
 }
 
 variable "internal" {
