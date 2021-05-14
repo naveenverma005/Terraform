@@ -24,7 +24,7 @@ resource "aws_lb_listener" "alb_https_listener" {
 
   default_action {
     type             = "forward"
-    target_group_arn = var.target_group_arn
+    #target_group_arn = var.target_group_arn
   }
 }
 
