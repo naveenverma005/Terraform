@@ -51,5 +51,6 @@ module "alb_and_alb_listeners" {
   alb_log_bucket                        = var.alb_log_bucket
   alb_enable_logging                    = var.alb_enable_logging
   prefix				= var.prefix
+  listener_details                      = var.listener_details
 }
 
